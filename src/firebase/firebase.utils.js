@@ -3,15 +3,15 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyBi3YvJulShaJH6roiyo47dml8g_r3KE-M",
-    authDomain: "floof-store-db.firebaseapp.com",
-    databaseURL: "https://floof-store-db.firebaseio.com",
-    projectId: "floof-store-db",
-    storageBucket: "floof-store-db.appspot.com",
-    messagingSenderId: "105054388065",
-    appId: "1:105054388065:web:a7cc34a980e9d91289cf20",
-    measurementId: "G-SKVGEP4SMM"
-  };
+    apiKey: "AIzaSyAKC0e2eMb_RHj7HYqcpgMe8vzw81lc_5c",
+    authDomain: "floof-store-db-100db.firebaseapp.com",
+    databaseURL: "https://floof-store-db-100db.firebaseio.com",
+    projectId: "floof-store-db-100db",
+    storageBucket: "floof-store-db-100db.appspot.com",
+    messagingSenderId: "975894049886",
+    appId: "1:975894049886:web:bcf674dd65db83caebf0cf",
+    measurementId: "G-C09R4BDKGF"
+  }
 
   //For storing the user Data in Firebase
   export const createUserProfileDocument = async (userAuth, additionalData) => {
