@@ -3,19 +3,20 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyAKC0e2eMb_RHj7HYqcpgMe8vzw81lc_5c",
-    authDomain: "floof-store-db-100db.firebaseapp.com",
-    databaseURL: "https://floof-store-db-100db.firebaseio.com",
-    projectId: "floof-store-db-100db",
-    storageBucket: "floof-store-db-100db.appspot.com",
-    messagingSenderId: "975894049886",
-    appId: "1:975894049886:web:bcf674dd65db83caebf0cf",
-    measurementId: "G-C09R4BDKGF"
+  apiKey: "AIzaSyC-jgc5GwE5oV9RmKBEPgn7AztPacQ-1sk",
+  authDomain: "floof-store-db-3ed2d.firebaseapp.com",
+  databaseURL: "https://floof-store-db-3ed2d.firebaseio.com",
+  projectId: "floof-store-db-3ed2d",
+  storageBucket: "floof-store-db-3ed2d.appspot.com",
+  messagingSenderId: "518899752949",
+  appId: "1:518899752949:web:9e4c5588168a8e98d6cabc",
+  measurementId: "G-GYPLKN868K"
   }
 
   //For storing the user Data in Firebase
   firebase.initializeApp(config);
 
+  //For user authentication
   export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
   
@@ -41,6 +42,7 @@ const config = {
     return userRef;
   };
   
+  // For adding the collections and documents to firbase
   export const addCollectionAndDocuments = async (
     collectionKey,
     objectsToAdd
@@ -56,6 +58,8 @@ const config = {
     return await batch.commit();
   };
   
+
+  // For retreiving the database values
   export const convertCollectionsSnapshotToMap = collections => {
     const transformedCollection = collections.docs.map(doc => {
       const { title, items } = doc.data();
