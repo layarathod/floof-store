@@ -1,6 +1,8 @@
 body {
     font-family: 'Open Sans Condensed';
     padding: 20px 60px;
+    background-image: url("https://i.ibb.co/gz31qBr/pexels-henry-co-2341290.jpg");
+    color: black;
 }
 
 a {
